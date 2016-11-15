@@ -1,0 +1,139 @@
+/*
+Theme Name: Eventerprise
+Description: Child theme for the Avada
+Template: Avada
+Text Domain:eventerprise
+*/
+
+@import url('./css/new-blog/new-blog.css');
+
+
+/** The post excerpts ***/
+
+.new-header .header-1-wrapper .site-branding {
+    padding: 8px 12px;
+    line-height: 0;
+}
+.entry-content {
+	width: 100%;
+}
+
+
+
+/************
+Custom Styling
+************/
+.container {
+	padding: 0 !important;
+}
+
+.vce-single .entry-content a {          /* added by Marc Steyn to highlight links in body of posts */
+    color: blue;
+}
+
+/************
+
+I am using the !important tag to over write the styles that are being dynamically added to the index page.
+
+************/
+
+/******************************************************* index page heading styling **/
+
+.vce-border-top .main-box-title {
+	border-top: none !important;
+	box-shadow: none !important;
+	font-size: 8em;
+	letter-spacing: -8px;
+	font-weight: bold;
+	padding: 0;
+	color: #929497;
+}
+.main-box {
+	margin: 4% 0;
+	box-shadow: none !important;
+	background: none !important;
+}
+.featured-post {
+  margin: 4% auto 0 !important;
+}
+h1.entry-title {
+	text-transform: uppercase !important;
+	font-weight: bold;
+	width: 85% !important;
+}
+
+
+
+/****************************************************** Individual article styling for the headings **/
+
+.entry-headline,
+.entry-content {
+	width: 80% !important;
+}
+.main-box-title {
+	font-weight: bold !important;
+}
+
+/******************************************************** Main Navigation Styling ****/
+.main-navigation {
+	display: none !important;
+}
+
+.vce-responsive-nav, .header-sticky .vce-responsive-nav {
+	display: block !important;
+	margin: 0.5%;
+	position: fixed !important;
+	right: 6px;
+}
+.new-header .header-1-wrapper {
+	float: none;
+	width: 100%;
+}
+.site-branding {
+	text-align: left !important;
+}
+.header-sticky .site-title {
+	width: 96%;
+	float: right;
+	text-align: left;
+	margin-left: 1%;
+}
+.fa-bars:before {
+	color: white;
+}
+.sidr {
+	background: white !important;
+}
+.sidr li a {
+	color: grey !important;
+}
+.sidr li a:hover {
+    color: coral !important;
+}
+input[type="text"] {
+	background: none !important;
+	border-radius: 2px;
+}
+
+@media only screen and (max-width: 1023px) {
+    .site-branding {
+    	display: block !important;
+    }
+    .header-sticky .vce-responsive-nav{position: absolute;right: -996px !important;top:-5px;}
+}
+
+@media only screen and (min-width: 768px) {
+	.single-line {
+		overflow: visible;
+		white-space: normal;
+	}
+}
+
+@media (min-width: 999px) {
+.vce-main-content .featured-post .featured-img {
+    height: 500px;
+}
+.vce-main-content .featured-post.home-page-post .featured-img {
+	height: 364px !important;
+}
+}
