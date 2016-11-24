@@ -134,5 +134,7 @@
 
 <?php wp_footer(); ?>
 
+<script id="_agile_min_js" async type="text/javascript" src="https://d1gwclp1pmzk26.cloudfront.net/agile/agile-cloud.js"> </script> <script type="text/javascript" > var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){ _agile.set_account('l30k61et1itndh640ooqa4dnah', 'eventerprise'); _agile_set_whitelist('ZXZlbnRlcnByaXNl'); _agile.track_page_view(); _agile_execute_web_rules();}; </script>
+
 </body>
 </html>
